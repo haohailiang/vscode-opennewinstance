@@ -4,18 +4,18 @@
     "description": "Quickly open a new instance of VS Code from the Explorer",
     "version": "0.0.12",
     "author": "Chris Dias",
-    "publisher": "chrisdias",
+    "publisher": "haohailiang",
     "galleryBanner": {
         "color": "#37699A",
         "theme": "dark"
     },
     "icon": "images/Open_file.png",
-    "homepage": "https://github.com/chrisdias/vscode-opennewinstance/blob/master/README.md",
+    "homepage": "https://github.com/haohailiang/vscode-opennewinstance/blob/master/README.md",
     "repository": {
-        "url": "https://github.dev/chrisdias/vscode-opennewinstance"
+        "url": "https://github.com/haohailiang/vscode-opennewinstance"
     },
     "bugs": {
-        "url": "https://github.com/chrisdias/vscode-opennewinstance/issues"
+        "url": "https://github.com/haohailiang/vscode-opennewinstance/issues"
     },
     "engines": {
         "vscode": "^1.59.0"
@@ -25,19 +25,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.openNewInstance",
-        "onCommand:extension.scopeToHere"
+        "onCommand:extension.openNewInstance"
     ],
     "main": "./dist/extension",
     "contributes": {
         "commands": [
             {
                 "command": "extension.openNewInstance",
-                "title": "Open New Workbench Here"
-            },
-            {
-                "command": "extension.scopeToHere",
-                "title": "Reopen Workbench Here"
+                "title": "在新窗口打开当前文件夹"
             }
         ],
         "menus": {
@@ -45,20 +40,11 @@
                 {
                     "command": "extension.openNewInstance",
                     "group": "navigation@99"
-                },
-                {
-                    "command": "extension.scopeToHere",
-                    "group": "navigation@98",
-                    "when": "explorerResourceIsFolder"
                 }
             ],
             "commandPalette": [
                 {
                     "command": "extension.openNewInstance",
-                    "when": "never"
-                },
-                {
-                    "command": "extension.scopeToHere",
                     "when": "never"
                 }
             ]

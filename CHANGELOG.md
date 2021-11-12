@@ -14,5 +14,5 @@
 * Webpack
 
 ## 0.0.2 
-* Move commands to navigation section, fixes [Issue 1](https://github.com/chrisdias/vscode-opennewinstance/issues/1)
+* Move commands to navigation section, fixes [Issue 1](https://github.com/haohailiang/vscode-opennewinstance/issues/1)
 * Change command "Scope Workbench to Here" to "Reopen Workbench Here"

@@ -16,12 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand("vscode.openFolder", e, true);
     });
 
-    let cmd2 = vscode.commands.registerCommand('extension.scopeToHere', (e: vscode.Uri) => {
-        vscode.commands.executeCommand("vscode.openFolder", e, false);
-    });
-
     context.subscriptions.push(cmd1);
-    context.subscriptions.push(cmd2);
 }
 
 // this method is called when your extension is deactivated
